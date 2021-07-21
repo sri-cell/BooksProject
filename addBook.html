@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="book.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Books</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="viewBook.html">view book</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="addBook.html">add book</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="updateBook.html">update book</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+
+
+<div class="container">
+  <!---heading---->
+      <header class="heading"> Add Book Details</header><hr></hr>
+   <!---Form starting----> 
+   <div class="row ">
+    <!--- For Name---->
+          <div class="col-sm-12">
+              <div class="row">
+            <div class="col-xs-4">
+                      <label class="firstname">Enter Id :</label> </div>
+              <div class="col-xs-8">
+                  <input type="text" name="fname" id="fname" placeholder="Enter Id" class="form-control ">
+              </div>
+           </div>
+      </div>
+      
+      
+          <div class="col-sm-12">
+          <div class="row">
+            <div class="col-xs-4">
+                      <label class="lastname">Enter Title :</label></div>
+         <div class ="col-xs-8">	 
+                  <input type="text" name="lname" id="lname" placeholder="Enter book title" class="form-control last">
+                 </div>
+          </div>
+      </div>
+      <!-----For Auther---->
+      <div class="col-sm-12">
+          <div class="row">
+            <div class="col-xs-4">
+                  <label class="mail" >Enter Auther :</label></div>
+            <div class="col-xs-8"	>	 
+                 <input type="email" name="email"  id="email"placeholder="Enter Auther" class="form-control" >
+              </div>
+          </div>
+      </div>
+    <!-----For for price---->
+           <div class="col-sm-12">
+              <div class="row">
+              <div class="col-xs-4">
+                      <label class="pass">Price:</label></div>
+           <div class="col-xs-8">
+                    <input type="number" name="password" id="password" placeholder="Enter price" class="form-control">
+          </div>
+           </div>
+       </div>
+       
+      <!-----------For choice book-------->
+          <div class="col-sm-12">
+          <div class ="row">
+                  <div class="col-xs-4 ">
+              <label class="gender">choice book:</label>
+          </div>
+        
+            <div class="col-xs-4 male">	 
+              
+  <select name="cars" id="cars">
+    <option value="volvo">Noval</option>
+    <option value="saab">Tech</option>
+    <option value="opel">Story</option>
+    <option value="audi">poem</option>
+  </select>
+          </div>
+          
+          </div>
+          <div class="col-sm-12">
+              <div class="btn btn-warning">Submit</div>
+        </div>
+      </div>
+    </div>	 
+           
+      
+ </div>
+ 
+ 
+    
+    
+
+</body>
+</html>
